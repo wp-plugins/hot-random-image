@@ -57,7 +57,6 @@ class Hotrandom_image extends WP_Widget {
 		$this->WP_Widget( 'hot-random_image', __('Hot Random Image', 'hot_random_image'), $widget_ops, $control_ops );
 		
 		add_action('wp_head', array( $this, 'Hotrandom_image_inline_scripts_and_styles'),13);
-	    add_action('admin_init', array( $this,'admin_utils'));
     }
 	
 	function Hotrandom_image_inline_scripts_and_styles(){
