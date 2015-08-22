@@ -168,7 +168,7 @@ class Hotrandom_image extends WP_Widget {
 			if($link){ ?>
 				<a href="<?php echo $link; ?>">
 		<?php } ?>
-				<img id="random-image-<?php echo $this->number; ?>" class="hot-random-image" src="<?php echo get_bloginfo('url').'/'.$image; ?>" alt="<?php echo $instance["alt"]; ?>" />
+				<img id="random-image-<?php echo $this->number; ?>" class="hot-random-image" src="<?php echo get_site_url().'/'.$image; ?>" alt="<?php echo $instance["alt"]; ?>" />
 	    <?php
 			if($link){ ?>
 				</a>
